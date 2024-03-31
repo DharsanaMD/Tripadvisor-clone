@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripAdvisor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center m-6">
+        <h1 class="font-bold text-3xl"><span class="text-green-500">T</span>ripadvisor</h1>
+        <ul class="flex gap-4 text-xl font-medium">
+            <li class="hover:bg-gray-200 rounded-2xl p-2">Discover</li>
+            <li class="hover:bg-gray-200 rounded-2xl p-2">Trips</li>
+            <li class="hover:bg-gray-200 rounded-2xl p-2">Review</li>
+            <li class="hover:bg-gray-200 rounded-2xl p-2">More</li>
+        </ul>
+        <button class="flex text-l rounded-2xl bg-black text-white p-2 ">Sign in</button>
+    </nav>
+    <!-- Header -->
+    <section class="text-center">
+        <h1 class="font-bold text-4xl m-3 mt-8 text-center">Where to</h1>
+        <div class="flex gap-4 justify-center text-xl font-medium">
+            <h3 class="p-4 cursor-pointer hover:underline"><i class="fa-solid fa-magnifying-glass p-2" style="color: #000000;"></i>Search All</h3>
+            <h3 class="p-4 cursor-pointer hover:underline"><i class="fa-solid fa-hotel p-2" style="color: #000000;"></i>Hotels</h3>
+            <h3 class="p-4 cursor-pointer hover:underline"><i class="fa-solid fa-ticket p-2" style="color: #000000;"></i>Things to Do</h3>
+            <h3 class="p-4 cursor-pointer hover:underline"><i class="fa-solid fa-utensils p-2" style="color: #000000;"></i>Restaurents</h3>
+            <h3 class="p-4 cursor-pointer hover:underline"><i class="fa-solid fa-house-user p-2" style="color: #000000;"></i>Holiday homes</h3>
+        </div>
+        <div class="flex justify-center">
+        <div class="text-center flex justify-between shadow-2xl m-10 rounded-3xl border-gray-600" style="width: 80%;">
+            <div class="flex m-4 container" >
+                <i class="fa-solid fa-magnifying-glass p-2 text-3xl" style="color: #000000;"></i>
+                <input type="text" class="p-4 outline-none " style="border-bottom: 2px solid rgb(210, 205, 205); width: 100%;" placeholder="Place to go,things to do and hotels">
+            </div>
+            <div>
+            <button class="bg-green-500 p-4 mt-3 rounded-3xl mr-5 font-medium text-xl">Search</button>
+        </div>
+        </div>
+    </div>
+    </section>
+    <!-- Image Section -->
+    <section class="flex justify-center"  >
+        <div class="flex m-5 mx-12 rounded-2xl relative" style=" background-color: #d8d6fb; width: 80%;">
+            <img src="img-2.png" alt="">
+            <div class="absolute flex flex-col text-center" style="width: 40%; top: 180px; left: 55px;">
+                <h1 class="font-bold text-4xl">Build a trip in minutes</h1>
+                <p class="text-2xl font-medium">Get a personalised itinerary just for you, guided by traveller tips and reviews.</p>
+                <p><Button class=" rounded-2xl p-3 mt-4 hover:bg-violet-200 font-medium" style="background-color: rgb(62, 9, 105); border: solid 1px rgb(62, 9, 105);">Start a trip with AI</Button></p>
+            </div>    
+        </div>
+    </section>
+    <!-- Section-1 -->
+    <section>
+        <div class="flex flex-col ml-24 mt-5">
+            <h1 class="font-bold text-3xl">2024’s award-winning shores</h1>
+            <p class=" text-xl">Travellers’ Choice Awards Best of the Best Beaches</p>
+           
+        </div>
+        <div class="flex gap-9 m-5  justify-center">
+            <div class="relative">
+                <img src="./images/s1-img1.jpg" alt="" class="rounded-xl ">
+                <p class=" absolute bottom-3 text-3xl text-white font-bold ml-3">Asia Beaches</p>
+            </div>
+            <div class="relative">
+                <img src="./images/s1-img2.jpg" alt="" class="rounded-xl ">
+                <p class=" absolute bottom-3 text-3xl text-white font-bold ml-3">Caribean Beaches</p>
+            </div>
+            <div class="relative">
+                <img src="./images/s1-img3.jpg" alt="" class="rounded-xl ">
+                <p class=" absolute bottom-3 text-3xl text-white font-bold ml-3">European Beaches</p>
+            </div>
+            <div class="relative">
+                <img src="./images/s1-img4.jpg" alt="" class="rounded-xl ">
+                <p class=" absolute bottom-3 text-3xl text-white font-bold ml-3">South pacefic Beaches</p>
+            </div>
+        </div>
+    </section>
+    <!-- Section-2 -->
+    <section class="">
+        <div class="flex flex-col ml-24 mt-6">
+        <h1 class="font-bold text-3xl">You might like these</h1>
+        <p class=" text-xl">More things to do in Ubud</p>
+        </div>
+        <div class="flex justify-center gap-9 mt-6">
+            <div class="w-85">
+                <img src="images/s2-img1.jpg" alt="" class="rounded-xl">
+                <p  class=" text-l font-medium">Tanah Lot and North Bali Tour</p>
+                <p  class=" text-l font-medium">🟢🟢🟢🟢🟢1,858</p>
+            </div>
+            <div class="w-85">
+                <img src="images/s2-img2.jpg" alt="" class="rounded-xl">
+                <p  class=" text-l font-medium">️Bali Instagram Tour</p>
+                <p  class=" text-l font-medium">🟢🟢🟢🟢1,807</p>
+            </div>
+            <div class="w-85">
+                <img src="images/s2-img3.jpg" alt="" class="rounded-xl">
+                <p  class=" text-l font-medium">Best of Bali Waterfalls</p>
+                <p  class=" text-l font-medium">🟢🟢🟢🟢🟢2,222</p>
+            </div>
+            <div class="w-85">
+                <img src="images/s2-img4.jpg" alt=""class="rounded-xl">
+                <p class=" text-l font-medium">Nusa Penida All-Inclusive Day Trip</p>
+                <p class=" text-l font-medium">🟢🟢🟢🟢2,263</p>
+            </div>
+        </div>
+    </section>
+    <!-- Section-3 -->
+    <section class="">
+        <div class="flex flex-col ml-24 mt-6">
+        <h1 class="font-bold text-3xl">Top experiences on Tripadvisor</h1>
+        <p class=" text-xl">The best tours, activities and tickets</p>
+        </div>
+        <div class="flex justify-center gap-9 mt-6">
+            <div class="w-85">
+                <img src="images/s3-img1.jpg" alt="" class="rounded-xl">
+                <p  class=" text-l font-medium">Best DMZ Tour Korea from Seoul</p>
+                <p  class=" text-l font-medium">🟢🟢🟢🟢🟢15,403</p>
+                <p>from ₹4,784 per adult</p>
+            </div>
+            <div class="w-85">
+                <img src="images/s3-img2.jpg" alt="" class="rounded-xl">
+                <p  class=" text-l font-medium">Phi Phi Islands Adventure Day Trip </p>
+                <p  class=" text-l font-medium">🟢🟢🟢🟢 1,983</p>
+                <p> from ₹6,624 per adult</p>
+            </div>
+            <div class="w-85">
+                <img src="images/s3-img-3.jpg" alt="" class="rounded-xl">
+                <p  class=" text-l font-medium">Private Sightseeing to Mt Fuji and Hakone</p>
+                <p  class=" text-l font-medium">🟢🟢🟢🟢🟢 1,067</p>
+                <p>from ₹51,255 per group</p>
+            </div>
+            <div class="w-85">
+                <img src="images/s3-img4.jpg" alt=""class="rounded-xl">
+                <p class=" text-l font-medium">Nusa Penida by Private Boat</p>
+                <p class=" text-l font-medium">🟢🟢🟢🟢2,263</p>
+                <p>
+                    from ₹9,032 per adult
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Section-4 -->
+    <section class="bg-yellow-100 mt-5 p-8">
+        <h1 class="text-3xl font-bold mt-25 ml-24">More to explore</h1>
+        <div class="flex gap-8 justify-center p-5">
+        <div>
+            <img src="images/s4-img1.jpg" alt="" class="rounded-xl" style="width:370px; height: 220px;">
+            <p class="font-medium p-2 text-center">Hong Kong's best hits: Find the perfect day itinerary</p>
+
+        </div>
+        <div>
+            <img src="images/s4-img5.jpg" alt="" class="rounded-xl" style="width:370px; height: 220px;">
+            <p class="font-medium p-2 text-center">11 beautiful places in India that have to be seen</p>
+
+        </div>
+        <div>
+            <img src="images/s4-img3.jpg" alt="" class="rounded-xl" style="width:370px; height: 220px;">
+            <p class="font-medium p-2 text-center">3 days in Osaka: The perfect itinerary</p>
+
+        </div>
+      </div>
+    </section>
+    <!-- Section-5 -->
+    <section>
+        <div class="flex flex-col ml-24 mt-5">
+            <h1 class="font-bold text-3xl">Top destinations for your next holiday</h1>
+            <p class=" text-xl">Here's where your fellow travellers are headed</p>
+           
+        </div>
+        <div class="flex gap-9 m-5  justify-center">
+            <div class="relative">
+                <img src="./images/s5-img1.jpg" alt="" class="rounded-xl ">
+                <p class=" absolute bottom-3 text-3xl text-white font-bold ml-3">Tokyo, Japan</p>
+            </div>
+            <div class="relative">
+                <img src="./images/s5-img2.jpg" alt="" class="rounded-xl ">
+                <p class=" absolute bottom-3 text-3xl text-white font-bold ml-3">Singapore, Singapore</p>
+            </div>
+            <div class="relative">
+                <img src="./images/s5-img3.jpg" alt="" class="rounded-xl ">
+                <p class=" absolute bottom-3 text-3xl text-white font-bold ml-3">Hanoi, Vietnam</p>
+            </div>
+            <div class="relative">
+                <img src="./images/s5-img4.jpg" alt="" class="rounded-xl ">
+                <p class=" absolute bottom-3 text-3xl text-white font-bold ml-3">Seoul, South Korea</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="p-5 bg-yellow-50 text-black ">
+            <div class="flex gap-3">
+                <div class="m-8 text-xl">
+                    <p>Tripadvisor Business</p>
+                    <p>Search on Tripadvisor</p>
+                    <p>Get the app</p>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                </div>
+                <div class="m-8 text-xl">
+                    <p>Careers</p>
+                    <p>Bog</p>
+                    <p>Help and Support</p>
+                    <p>Affiliate</p>
+                    <p>Investors</p>
+                </div>
+            </div>
+            <div class="m-8 items-center flex justify-between text-xl">
+                <h1>Tripadvisor</h1>
+                <p>&copy; Tripadvisor, Inc</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
